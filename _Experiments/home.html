@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+#content {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	#intro_transitioningDivContainer {
+		position: relative;		
+		margin: 0px;
+		padding: 0px;
+		width: 600px;
+		height: 368px;
+	}	
+	
+	#intro_transitioningDivContainer img {
+		position:absolute;
+		left:0;
+		-webkit-transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;		
+	}
+	
+	#shown {
+		opacity: 1;			
+	}
+	
+	#gone {
+		opacity: 0;
+	}
+#theDiv {
+	background-color: #CB8485;
+	width: 600px;
+	height: 368px;
+	margin-left: 51px;
+}
+</style>
+</head>
+
+<body>
+<div id="content">
+	<h3>Featured Properties</h3>
+    <hr>
+    
+    <div id="theDiv">
+        <div id="intro_transitioningDivContainer">
+            <img class="intro_imgDrumSet introImgArr" id="shown" src="../_images/property1a.jpg">
+            <img class="intro_imgDrumSet introImgArr" id="shown" src="../_images/property1b.jpg">
+            <img class="intro_imgDrumSet introImgArr" id="shown" src="../_images/property1c.jpg">
+            <img class="intro_imgDrumSet introImgArr" id="shown" src="../_images/property1d.jpg">
+            <img class="intro_imgDrumSet introImgArr" id="shown" src="../_images/property1e.jpg">
+            <img class="intro_imgDrumSet introImgArr" id="shown" src="../_images/property1f.jpg">            
+        </div>
+
+    </div>
+</div>
+<script>
+/* Variables for Intro */
+var i;
+var k;
+
+var classIntroImgArr;
+var classIntroNavBullets;
+
+function waitForEvents() {
+	/* Set Intro variables. */
+	i = 5;
+
+	classIntroImgArr = document.getElementsByClassName("introImgArr");	
+	
+	// Built-in
+	setInterval(transitionIntro, 1000);						
+}
+
+window.onload = function() {
+	waitForEvents();
+};
+
+// This is called by the method waitForEvents().
+function transitionIntro() {
+	classIntroImgArr[i].setAttribute("id", "gone");
+
+	if (i <= 0) {
+		for (var j = 0; j < 6; j++) {
+			classIntroImgArr[j].setAttribute("id", "shown");	
+		}	
+									
+		i = 6;
+	}
+	
+	--i;
+}
+</script>
+</body>
+</html>

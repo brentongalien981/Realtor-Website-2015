@@ -1,0 +1,205 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>contact2.html</title>
+<!-- InstanceEndEditable -->
+
+<link href="_css/main.css" rel="stylesheet" type="text/css">
+
+<!-- InstanceBeginEditable name="style" -->
+<style type="text/css">
+
+form.contact {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: thin;
+	margin-bottom: 3%;
+	margin-top: 4%;
+}
+fieldset {
+	border-radius: 10px;
+	margin-top: 0%;
+}
+main #content {
+	background-color: rgba(217,200,148,0.13);
+	font-size: 96%;
+	font-weight: 400;
+	text-shadow: 0.1px 0.1px 0.1px rgba(128,128,128,1.00);
+}
+.formLabel {
+	text-align: right;
+	/* [disabled]vertical-align: top; */
+	margin-top: 0px;
+	font-size: 80%;
+}
+table.contact {
+	margin-left: auto;
+	margin-right: auto;
+}
+fieldset table.contact {
+	width: 80%;
+	border-style: none;
+	border-collapse: collapse;
+}
+table.contact , fieldset tr, fieldset td{
+	padding: 3px;
+}
+.label_choice {
+	font-size: 78%;
+}
+#theTd {
+	vertical-align: top;
+}
+</style>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="div_main">
+<header>
+</header>
+
+<aside>
+        <img src="_images/agentPhoto.png" id="agentPhoto">
+        <div id="agentInfo">
+        	<h5>Albert Einstein</h5>
+            <h6>120 Year Experience</h6>
+            <hr>
+            <h6 id="theH6a">Phone 647 314 1516</h6>
+            <h6 id="theH6b">Email emc2@remax.ca</h6>
+            
+        </div>
+    </aside>
+
+
+<main>
+	<nav id="template_nav_top">
+        <a href="home.html" class="template">Home</a>
+        <a href="switchboard.html" class="template">Listings</a>        
+        <a href="response.html" class="template">Responses</a>
+        <a href="ad.html" class="template">REMAX Ad</a>
+        <a href="contact2.html" class="template">Contact Us</a>
+        <a href="sitemap2.html" class="template">Sitemap</a>         
+    </nav>
+    
+    <!-- InstanceBeginEditable name="Region_Main" -->
+  	<div id="content">
+    	<form action="mailto:odox700@gmail.com" method="post" class="contact">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <table class="contact">
+                      <tbody>
+                        <tr>
+                          <td class="formLabel">First Name</td>
+                          <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                          <td class="formLabel">Last Name</td>
+                          <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                          <td class="formLabel">E-mail</td>
+                          <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                          <td class="formLabel">Phone</td>
+                          <td><input type="tel"></td>
+                        </tr>
+                        <tr>
+                          <td class="formLabel" id="theTd">Message</td>
+                          <td><textarea cols="40" rows="5" placeholder="Leave a message here."></textarea></td>
+                        </tr>
+                      </tbody>
+                </table>
+                
+               
+            </fieldset>
+            
+            <br>
+            
+            <fieldset>
+                <legend>Real Estate</legend>
+                <table class="contact">
+                      <tbody>
+                        <tr>
+                          <td class="formLabel">Sale Type</td>
+                          <td>				
+                                <label class="label_choice">For Sale </label><input type="radio" name="radioGroup_saleType" value="forSale" id="radioGroup_saleType_0">                        
+                                <label class="label_choice">For Lease </label><input type="radio" name="radioGroup_saleType" value="forLease" id="radioGroup_saleType_1">					                  
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="formLabel">Listing Type</td>
+                          <td>
+                              <select>
+                                <option value="house">Residential - House</option>
+                                <option value="condo">Residential - Condo</option>
+                                <option value="recreational">Recreational</option>
+                                <option value="commercial">Commercial</option>
+                              </select>                  
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="formLabel">Min Price</td>
+                          <td>
+                          	<select>
+                                <option value="1000">$ 1,000</option>
+                                <option value="2000">$ 2,000</option>
+                                <option value="5000">$ 5,000</option>
+                                <option value="10000">$ 10,000</option>
+                                <option value="25000">$ 25,000</option>
+                                <option value="50000">$ 50,000</option>
+                              </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="formLabel">Max Price</td>
+                          <td>
+                              <select>
+                                <option value="1000">$ 1,000</option>
+                                <option value="2000">$ 2,000</option>
+                                <option value="5000">$ 5,000</option>
+                                <option value="10000">$ 10,000</option>
+                                <option value="25000">$ 25,000</option>
+                                <option value="50000">$ 50,000</option>
+                              </select>                    
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="formLabel">Bedrooms</td>
+                          <td><input type="number" max="6" min="1"></td>
+                        </tr>
+                      </tbody>
+                </table>
+            </fieldset>
+        
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </div>
+    <!-- InstanceEndEditable -->
+    
+</main>
+
+<footer>
+	<nav>
+        <a href="home.html">Home</a>
+        <a href="switchboard.html">Listings</a>
+        <a href="response.html">Responses</a>
+        <a href="ad.html">REMAX Ad</a>
+        <a href="contact2.html">Contact Us</a>
+        <a href="sitemap2.html">Sitemap</a>            
+    </nav>
+    
+    <h6 id="copyH6">&copy; copyright - bren - 300 726 788</h6>
+</footer>
+</div>
+
+<!-- InstanceBeginEditable name="Region_Script" -->
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+#content {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #E8B7B8;
+}
+
+form.contact {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #9AD9CD;	
+}
+.formLabel {
+	text-align: right;
+	vertical-align: top;
+}
+table.contact {
+	background-color: #D9E19A;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+</head>
+
+<body>
+<div id="content"> 
+	<form action="mailto:odox700@gmail.com" method="post" class="contact">
+    <fieldset>
+    	<legend>Contact Us</legend>
+        <table width="70%" border="1" class="contact">
+              <tbody>
+                <tr>
+                  <td class="formLabel">First Name</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td class="formLabel">Last Name</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td class="formLabel">E-mail</td>
+                  <td><input type="email"></td>
+                </tr>
+                <tr>
+                  <td class="formLabel">Phone</td>
+                  <td><input type="tel"></td>
+                </tr>
+                <tr>
+                  <td class="formLabel">Message</td>
+                  <td><textarea cols="40" rows="5" placeholder="Leave a message here."></textarea></td>
+                </tr>
+              </tbody>
+		</table>
+        
+       
+    </fieldset>
+    
+    <br>
+    
+    <fieldset>
+    	<legend>Real Estate</legend>
+        <table width="70%" border="1" class="contact">
+              <tbody>
+                <tr>
+                  <td class="formLabel">Sale Type</td>
+                  <td>				
+                        For Sale<input type="radio" name="radioGroup_saleType" value="forSale" id="radioGroup_saleType_0">                        
+                        For Lease<input type="radio" name="radioGroup_saleType" value="forLease" id="radioGroup_saleType_1">					                  
+			      </td>
+                </tr>
+                <tr>
+                  <td class="formLabel">Listing Type</td>
+                  <td>
+                      <select>
+                        <option value="house">Residential - House</option>
+                        <option value="condo">Residential - Condo</option>
+                        <option value="recreational">Recreational</option>
+                        <option value="commercial">Commercial</option>
+                      </select>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td class="formLabel">Min Price</td>
+                  <td><input type="number"></td>
+                </tr>
+                <tr>
+                  <td class="formLabel">Max Price</td>
+                  <td>
+                      <select>
+                        <option value="1000">$ 1,000</option>
+                        <option value="2000">$ 2,000</option>
+                        <option value="5000">$ 5,000</option>
+                        <option value="10000">$ 10,000</option>
+                      </select>                    
+                  </td>
+                </tr>
+                <tr>
+                  <td class="formLabel">Bedrooms</td>
+                  <td><input type="number" max="6" min="1"></td>
+                </tr>
+              </tbody>
+		</table>
+    </fieldset>
+    
+    <br>
+    <input type="submit">
+    <input type="reset">
+    </form>
+</div>
+</body>
+</html>
